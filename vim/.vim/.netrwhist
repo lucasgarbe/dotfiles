@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Applications/MAMP/htdocs/BB_Wordpress_01/wp-content/themes/bb_theme_f6_01'
+let g:netrw_dirhist_2='/Applications/MAMP/htdocs/lmlocal'
+let g:netrw_dirhist_3='/Users/lucasgarbe'
