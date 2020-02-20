@@ -16,6 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mxw/vim-jsx'
+Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 
 call vundle#end()
 filetype plugin indent on
@@ -25,7 +27,7 @@ filetype plugin indent on
 syntax on
 set t_Co=256 " important for base16 colors
 let base16colorspace=256 " important for base16 colors 
-colorscheme base16-tomorrow 
+colorscheme base16-tomorrow
 set background=dark
 set expandtab " tab to spaces
 set shiftwidth=2 " number of spaces when shift indenting
@@ -54,3 +56,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" jsx
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
