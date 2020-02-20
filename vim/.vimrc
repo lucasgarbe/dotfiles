@@ -24,11 +24,13 @@ filetype plugin indent on
 
 " visuals
 
+if filereadable(expand("~/.vimrc_background"))
+  set background=dark
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
 syntax on
-set t_Co=256 " important for base16 colors
-let base16colorspace=256 " important for base16 colors 
-colorscheme base16-tomorrow
-set background=dark
 set expandtab " tab to spaces
 set shiftwidth=2 " number of spaces when shift indenting
 set tabstop=2 " number of visual spaces per tab
