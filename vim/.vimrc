@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'chriskempson/base16-vim' 
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
+Plugin 'mike-hearn/base16-vim-lightline'
 Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
@@ -47,6 +48,8 @@ set visualbell " turn off the bell
 
 set noshowmode " no mode shown, redundant with lightline
 set laststatus=2 " important for lightline
+let g:lightline = {}
+let g:lightline.colorscheme='base16_outrun_dark'
 
 " map NERDTree
 map <C-n> :NERDTreeToggle<CR> 
