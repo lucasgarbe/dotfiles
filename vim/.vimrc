@@ -19,6 +19,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
