@@ -83,6 +83,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ts='tmux new-session -A -D -s'
+
 #----------------- CUSTOM ADDITIONS -----------------#
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
