@@ -55,6 +55,7 @@ fi
 if [[ $do_js_stack == y* ]]; then 
   printf "\n${YELLOW}--- executing js stack${NC}\n"
   sudo apt install --assume-yes nodejs
+  sudo apt install --assume-yes npm
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
   printf "\n${GREEN}--- installed js stack${NC}\n"
 fi
