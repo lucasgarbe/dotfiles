@@ -19,6 +19,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
+Plugin 'junegunn/fzf', { 'do': { ->fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
@@ -55,6 +56,7 @@ let g:lightline.colorscheme='base16_outrun_dark'
 " map NERDTree
 map <C-n> :NERDTreeToggle<CR> 
 
+
 " KEY MAPPINGS
 
 " easier split navigation
@@ -62,6 +64,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" fzf
+nnoremap <C-P> :GFiles<cr>
 
 " jsx
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
