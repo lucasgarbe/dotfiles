@@ -66,7 +66,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " fzf
-nnoremap <C-P> :GFiles<cr>
+nnoremap <C-P> :Files<cr>
 
 " jsx
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files

@@ -58,6 +58,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:$HOME
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/.profile
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -94,5 +96,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 export TERM=xterm-256color
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
