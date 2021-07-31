@@ -9,9 +9,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-
+" 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'chriskempson/base16-vim' 
+" Plugin 'danielwe/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mike-hearn/base16-vim-lightline'
@@ -70,3 +71,6 @@ nnoremap <C-P> :GFiles<cr>
 
 " jsx
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" esckey
+set timeoutlen=1000 ttimeoutlen=0
