@@ -45,6 +45,7 @@ set autoindent " copy indentation form previous line
 set wrap linebreak nolist " wrap lines without line breaks
 set linespace=4
 set number " show line numbers
+set relativenumber
 set showmatch " matches brackets
 set cursorline " highlights current line
 set visualbell " turn off the bell
